@@ -31,14 +31,16 @@ section{
     background-size: cover;
     background-color: rgb(72, 96, 175);
     margin: auto;
-    padding-top: 20px;
-    padding-left: auto;
-    padding-right: auto;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 0px;
     width: 100%;
     color: #ffffff;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
   }
 
   main{
@@ -135,3 +137,14 @@ section{
     
   }
     
+  @media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+}
