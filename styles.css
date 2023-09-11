@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/* CSS Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #0f0e0e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+  }
+
+section{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+/* 
+  ol{
+    padding: 30px;
+  } */
+
+  .main-header {
+    background-size: cover;
+    background-color: rgba(9, 43, 155, 0.712);
+    margin: auto;
+    padding-top: 20px;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 0px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  main{
+    flex: 1;
+  }
+
+  .nav {
+    margin: 0;
+    color: #ffffff;
+
+  }
+
+  .nav li{
+    display: inline;
+    color: #ffffff;
+    text-size-adjust: 150%;
+    padding: 10px;
+  }
+
+  .nav li:hover{
+    background-color: rgb(32, 13, 206);
+    /*    background-color: rgb(226, 13, 95); */
+
+  }
+
+  .nav1{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: white underline;
+    color: #ffffff;
+    text-align: center;
+    font-size: 110%;
+  }
+
+  .nav2{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none; 
+    color: #ffffff;
+    text-align: center;
+    font-size: 110%;
+  }
+
+  /* .horiline{
+    color: #ffffff2f;
+    width: 60%;
+  } */
+
+  .summary{
+    padding-left: 2%;
+    color: rgb(36, 138, 206);
+   /* color: rgb(211, 25, 140);*/
+    text-align: left;
+  }
+
+  .para{
+    padding-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    padding-right: 25px;
+  }
+
+  .main-footer{
+    background-size: cover;
+    background-color: rgb(9, 43, 155, 0.712);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .profile_links{
+    margin: 0 10px;
+    text-decoration:none;
+    display:inline-block;
+  }
+  
+  .main-footer img{
+    width: 32px;
+    height: 32px;
+  }
+    
