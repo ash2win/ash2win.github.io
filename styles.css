@@ -151,7 +151,7 @@ section{
     .nav  {
       display: none;
       position: absolute;
-      background-color: rgba(72, 96, 175, 0.9);
+      background-color: rgb(21, 21, 24, 0.8);
       top: 60px; /* Adjust this value to position the menu below the header */
       right: 0;
       left: 0;
@@ -167,6 +167,8 @@ section{
       right: 12%;
       z-index: 2;
       display: block;
+      text-decoration: none;
+      opacity: 0.8;
     }
 
     .nav-toggle:checked ~ .nav{
@@ -184,6 +186,13 @@ section{
       text-decoration: none;
     }
 
+    html{
+      font-size: 16px;
+    }
 
+    body{
+      font-size: smaller;
+    }
+  
 
   }
