@@ -22,6 +22,9 @@ section{
     flex-direction: column;
   }
 
+  ul{
+    padding-left: 0%;
+  }
 /* 
   ol{
     padding: 30px;
@@ -152,7 +155,7 @@ section{
     color: rgb(230, 103, 57);
   }
 
-  @media all and (max-width: 750px) {
+  @media all and (max-width: 1000px) {
     /* Styles for smaller screens go here */
     .nav  {
       display: none;
@@ -170,9 +173,8 @@ section{
       font-size: 28px;
       cursor: pointer;
       position: absolute;
-      padding-top: 5px;
+      padding-top: 2%;
       right: 12%;
-      padding-bottom: 10px;
       display: block;
       text-decoration: none;
       transition: width 2s, height 2s, transform 1s;
@@ -208,18 +210,7 @@ section{
       padding-left: 0%;
     }
 
-    html{
-      font-size: 16px;
-    }
 
-    h2{
-      font-size: 18px;
-    }
-
-    body{
-      font-size: 14px;
-    }
-    
     .nav li:hover{
       background-color: rgb(230, 103, 57);
       transition: ease-in-out 0.4s;
@@ -229,5 +220,93 @@ section{
     ul{
       padding-left: 0%;
     }
+
+  }
+
+  @media all and (max-width: 750px) {
+    /* Styles for smaller screens go here */
+    .nav  {
+      display: none;
+      position: absolute;
+      background-color: rgb(21, 21, 24);
+      top: 60px; /* Adjust this value to position the menu below the header */
+      right: 0;
+      left: 0;
+      text-align: center;
+      z-index: 1;
+    }
+
+
+    .nav-icon {
+      font-size: 28px;
+      cursor: pointer;
+      position: absolute;
+      padding-top: 2%;
+      right: 12%;
+      display: block;
+      text-decoration: none;
+      transition: width 2s, height 2s, transform 1s;
+      color: white;
+    }
+
+    .nav-toggle:checked ~ .nav{
+      display: block;
+    }
+
+    .nav-toggle:checked ~ .nav-icon{
+      transform: rotate(90deg);
+      color: rgb(230, 103, 57);
+    }
+
+    .nav-toggle:not(:checked) ~ .nav-icon{
+      transform: rotate(0deg);
+      color: white;
+    }
+
+    .nav ul li {
+      display: block;
+      padding: auto;
+      padding-left: 0px;
+      text-align: center;
+    }
+  
+    .nav ul li a {
+      font-size: 16px;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      padding-left: 0%;
+    }
+
+    .nav li:hover{
+      background-color: rgb(230, 103, 57);
+      transition: ease-in-out 0.4s;
+      width: 100%;
+    }
+
+    ul{
+      padding-left: 0%;
+    }
+
+    
+  html{
+    font-size: 16px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  body{
+    font-size: 14px;
+  }
+
+  .main-footer img{
+    width: auto;
+    height: 20px;
+    text-decoration: none;
+    filter: invert(100%);
+  }
+
 
   }
