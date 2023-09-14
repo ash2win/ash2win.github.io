@@ -145,6 +145,12 @@ section{
     font-size: 110%;
   }
     
+  .nav-icon:hover{
+    opacity: 1;
+    transform: rotate(40deg); /* for animation */
+    color: rgb(230, 103, 57);
+  }
+
   @media all and (max-width: 750px) {
     /* Styles for smaller screens go here */
     .nav  {
@@ -168,12 +174,7 @@ section{
       display: block;
       text-decoration: none;
       transition: width 2s, height 2s, transform 1s;
-    }
-
-    .nav-icon:hover{
-      opacity: 1;
-      transform: rotate(40deg); /* for animation */
-      color: rgb(230, 103, 57);
+      color: white;
     }
 
     .nav-toggle:checked ~ .nav{
@@ -183,6 +184,11 @@ section{
     .nav-toggle:checked ~ .nav-icon{
       transform: rotate(90deg);
       color: rgb(230, 103, 57);
+    }
+
+    .nav-toggle:not(:checked) ~ .nav-icon{
+      transform: rotate(0deg);
+      color: white;
     }
 
     .nav ul li {
