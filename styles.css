@@ -65,6 +65,7 @@ section{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block;
     padding-right: 10%;
+    max-width: 80%;
   }
 
   .main-footer{
@@ -196,6 +197,8 @@ section{
       rotate: 0deg;
     }
 
+    /* CHECK HAMBURGER MENU ROTATION FOR MOBILE*/
+
     .nav ul li {
       display: block;
       padding: auto;
@@ -208,10 +211,18 @@ section{
       text-decoration: none;
     }
 
- 
+    .nav a:hover{
+      transform: scale(1.2);
+      transition: ease-out 0.4s;
+    }
+
+    .para{
+      max-width: 90%;
+    }
 
 
   }
+
 
   @media all and (max-width: 750px) {
 
@@ -234,4 +245,9 @@ section{
       filter: invert(100%);
     }
 
+
+        
+  .para{
+    max-width: 100%;
+  }
   }
