@@ -1,253 +1,264 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /* CSS Reset */
-html, body {
-    margin: 0;
-    padding: 0;
-    color: #0f0e0e;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100%;
-  }
-
-section{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #0f0e0e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
 }
 
-  body{
-    display: flex;
-    flex-direction: column;
-  }
+section {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 /* 
   ol{
     padding: 30px;
   } */
 
-  .main-header {
-    background-size: cover;
-    background-color: rgb(21, 21, 24);
-    margin: auto;
-    padding-top: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 0px;
-    width: 100%;
-    color: #ffffff;
-    text-align: center;
-    vertical-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: space-between;
-  }
+.main-header {
+  background-size: cover;
+  background-color: rgb(21, 21, 24);
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
 
-  main{
-    flex: 1;
-  }
-  
-  /* .horiline{
+main {
+  flex: 1;
+}
+
+/* .horiline{
     color: #ffffff2f;
     width: 60%;
   } */
 
-  .summary{
-    padding-left: 10%;
-    color: rgb(36, 138, 206);
-   /* color: rgb(211, 25, 140);*/
-    text-align: left;
-  }
+.summary {
+  padding-left: 20%;
+  color: rgb(36, 138, 206);
+  /* color: rgb(211, 25, 140);*/
+  text-align: left;
+}
 
-  .para{
-    padding-left: 10%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: block;
-    padding-right: 10%;
-    max-width: 950px;
-  }
+.para {
+  padding-left: 20%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  padding-right: 20%;
+  max-width: 100%;
+}
 
-  .main-footer{
-    background-size: cover;
+.main-footer {
+  background-size: cover;
+  background-color: rgb(21, 21, 24);
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.profile_links {
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.profile_links a {
+  text-decoration: none;
+}
+
+.main-footer img {
+  width: auto;
+  height: 32px;
+  text-decoration: none;
+  filter: invert(100%);
+}
+
+.main-footer img:hover {
+  opacity: 0.8;
+  transform: scale(1.2) rotate(5deg); /* for animation */
+}
+
+.nav-icon {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav {
+  margin: 0;
+  color: #ffffff;
+}
+
+.nav li {
+  display: inline;
+  color: #ffffff;
+  text-size-adjust: 150%;
+  padding: 10px;
+}
+
+.nav li:hover {
+  background-color: rgb(230, 103, 57);
+  box-shadow: 2px 2px 5px rgba(192, 73, 73, 0.3);
+  transition: ease-in-out 0.6s;
+}
+
+.nav1 {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: white underline;
+  color: #ffffff;
+  text-align: center;
+  font-size: 110%;
+}
+
+.nav2 {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 110%;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.pdf_text{
+  display: none;
+}
+
+@media all and (max-width: 950px) {
+  /* Styles for smaller screens go here */
+  .nav {
+    display: none;
+    position: absolute;
     background-color: rgb(21, 21, 24);
-    padding: 10px 0;
+    top: 60px; /* Adjust this value to position the menu below the header */
+    right: 0;
+    left: 0;
     text-align: center;
-    text-decoration: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    z-index: 1;
   }
 
-  .profile_links{
-    margin: 0 10px;
-    text-decoration:none;
-    display:inline-block;
+  .nav-icon {
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    padding-top: 10px;
+    right: 12%;
+    padding-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: width 2s, height 2s, transform 1s;
   }
 
-  .profile_links a{
+  .nav-icon:hover {
+    opacity: 1;
+    transform: rotate(40deg); /* for animation */
+    color: rgb(230, 103, 57);
+  }
+
+  .nav-toggle:checked ~ .nav {
+    display: block;
+  }
+
+  .nav-toggle:checked ~ .nav-icon {
+    transform: rotate(90deg);
+    color: rgb(230, 103, 57);
+  }
+
+  .nav-toggle:not(:checked):not(:hover) ~ .nav-icon {
+    color: white;
+    rotate: 0deg;
+  }
+
+  /* CHECK HAMBURGER MENU ROTATION FOR MOBILE*/
+
+  .nav ul li {
+    display: block;
+    padding: auto;
+    text-align: center;
+  }
+
+  .nav ul li a {
+    font-size: 16px;
+    color: #ffffff;
     text-decoration: none;
   }
-  
-  .main-footer img{
+
+  .nav a:hover {
+    transform: scale(1.2);
+    transition: ease-out 0.4s;
+  }
+
+  .para {
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 100%;
+  }
+
+  .summary {
+    padding-left: 10%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  html {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .main-footer img {
     width: auto;
-    height: 32px;
+    height: 20px;
     text-decoration: none;
     filter: invert(100%);
   }
 
-  .main-footer img:hover{
-    opacity: 0.8;
-    transform: scale(1.2) rotate(5deg); /* for animation */
-    
-  }
-
-  .nav-icon {
-    display: none;
-  }
-
-  .nav-toggle{
-    display: none;
-  }
-
-  .nav {
-    margin: 0;
-    color: #ffffff;
-  }
-
-  .nav li{
-    display: inline;
-    color: #ffffff;
-    text-size-adjust: 150%;
-    padding: 10px;
-    
-  }
-
-  .nav li:hover{
-    background-color: rgb(230, 103, 57);
-    box-shadow: 2px 2px 5px rgba(192, 73, 73, 0.3);
-    transition: ease-in-out 0.6s;
-  }
-
-  .nav1{
-    display: inline-block;
-    padding: 10px;
-    text-decoration: white underline;
-    color: #ffffff;
-    text-align: center;
-    font-size: 110%;
-  }
-
-  .nav2{
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none; 
-    color: #ffffff;
-    text-align: center;
-    font-size: 110%;
-  }
-
-  ul{
-    padding-left: 0px;
-  }
-
-  @media all and (max-width: 950px) {
-    /* Styles for smaller screens go here */
-    .nav  {
-      display: none;
-      position: absolute;
-      background-color: rgb(21, 21, 24);
-      top: 60px; /* Adjust this value to position the menu below the header */
-      right: 0;
-      left: 0;
-      text-align: center;
-      z-index: 1;
-    }
-
-    .nav-icon {
-      font-size: 28px;
-      cursor: pointer;
-      position: absolute;
-      padding-top: 10px;
-      right: 12%;
-      padding-bottom: 10px;
-      display: block;
-      text-decoration: none;
-      color: white;
-      transition: width 2s, height 2s, transform 1s;
-    }
-
-    .nav-icon:hover{
-      opacity: 1;
-      transform: rotate(40deg); /* for animation */
-      color: rgb(230, 103, 57);
-    }
-
-    .nav-toggle:checked ~ .nav{
-      display: block;
-    }
-
-    .nav-toggle:checked ~ .nav-icon{
-      transform: rotate(90deg);
-      color: rgb(230, 103, 57);
-    }
-
-    .nav-toggle:not(:checked):not(:hover) ~ .nav-icon{
-      color: white;
-      rotate: 0deg;
-    }
-
-    /* CHECK HAMBURGER MENU ROTATION FOR MOBILE*/
-
-    .nav ul li {
-      display: block;
-      padding: auto;
-      text-align: center;
-    }
-  
-    .nav ul li a {
-      font-size: 16px;
-      color: #ffffff;
-      text-decoration: none;
-    }
-
-    .nav a:hover{
-      transform: scale(1.2);
-      transition: ease-out 0.4s;
-    }
-
-    .para{
-      max-width: 100%;
-    }
-
-
-  }
-
-
-  @media all and (max-width: 750px) {
-
-    html{
-      font-size: 16px;
-    }
-
-    h2{
-      font-size: 18px;
-    }
-
-    body{
-      font-size: 14px;
-    }
-    
-    .main-footer img{
-      width: auto;
-      height: 20px;
-      text-decoration: none;
-      filter: invert(100%);
-    }
-
-
-        
-  .para{
+  .para {
     max-width: 100%;
   }
+
+  .pdf {
+    display: none;
   }
+
+  .pdf_text{
+    display: block;
+  }
+}
